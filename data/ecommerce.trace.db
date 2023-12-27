@@ -1,0 +1,22 @@
+2023-12-26 10:25:45.337353-03:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE USER [*]'ecommerceapp'@'localhost' IDENTIFIED BY 'ecommerceapp'"; expected "identifier"; SQL statement:
+CREATE USER 'ecommerceapp'@'localhost' IDENTIFIED BY 'ecommerceapp' [42001-224]
+2023-12-26 10:25:45.339265-03:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "GRANT ALL PRIVILEGES ON [*]* . * TO 'ecommerceapp'@'localhost'"; expected "identifier"; SQL statement:
+GRANT ALL PRIVILEGES ON * . * TO 'ecommerceapp'@'localhost' [42001-224]
+2023-12-26 10:25:45.340285-03:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]#\000d\000a# Starting with MySQL 8.0.4, the MySQL team changed the \000d\000a# default authentication plugin for MySQL server \000d\000a# from mysql_native_password to caching_sha2_password.\000d\000a#\000d\000a# The command below will make the appropriate updates for your user account.\000d\000a#\000d\000a# See the MySQL Reference Manual for details: \000d\000a# https://dev.mysql.com/doc/refman/8.0/en/caching-sha2-pluggable-authentication.html\000d\000a#\000d\000aALTER USER 'ecommerceapp'@'localhost' IDENTIFIED WITH mysql_native_password BY 'ecommerceapp'"; SQL statement:
+#
+# Starting with MySQL 8.0.4, the MySQL team changed the 
+# default authentication plugin for MySQL server 
+# from mysql_native_password to caching_sha2_password.
+#
+# The command below will make the appropriate updates for your user account.
+#
+# See the MySQL Reference Manual for details: 
+# https://dev.mysql.com/doc/refman/8.0/en/caching-sha2-pluggable-authentication.html
+#
+ALTER USER 'ecommerceapp'@'localhost' IDENTIFIED WITH mysql_native_password BY 'ecommerceapp' [42000-224]
+2023-12-26 10:26:52.552546-03:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE USER [*]'ecommerceapp'@'localhost' IDENTIFIED BY 'ecommerceapp'"; expected "identifier"; SQL statement:
+CREATE USER 'ecommerceapp'@'localhost' IDENTIFIED BY 'ecommerceapp' [42001-224]
